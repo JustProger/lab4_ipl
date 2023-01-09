@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="my-primary">
+        <div class="container">
+            <div class="header_inner">
+                <div class="header_logo">Logo</div>
+
+                <nav>
+                    <a href="">item 1</a>
+                    <a href="">item 2</a>
+                    <a href="">item 3</a>
+                    <a href="">item 4</a>
+                    <a href="">item 5</a>
+                    <a href="">item 6</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <form class="main_form">
+                <div class="add-block">
+                    <span>Добавить товар:</span>
+                    <input type="text" id="name" placeholder="Наименование">
+                    <input type="number" id="price" placeholder="Стоимость">
+                    <input type="button" class="add-row" value="Добавить">
+                </div>
+                <div class="calculate-block">
+                    <input type="button" class="calculate" value="Рассчитать стоимость заказа"> :
+                    <span id="result">0</span>
+                </div>
+                <div class="order-forming-block">
+                    <input type="button" class="order-forming-add" value="Добавить в таблицу заказов">
+                    <!-- <button class="order-forming-add">Добавить в таблицу заказов</button> -->
+                    <input type="button" class="order-forming-clear" value="Очистить таблицу заказов">
+                </div>
+            </form>
+            <table class="products_table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Товары</th>
+                    </tr>
+                    <tr>
+                        <th>Наименование</th>
+                        <th>Стоимость</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"> product #1</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"> product #2</td>
+                        <td>2000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="order-forming_table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Таблица формирования заказа</th>
+                    </tr>
+                    <tr>
+                        <th>Наименование</th>
+                        <th>Стоимость</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="my-primary">
+        <div class="container">
+            <p>Footer</p>
+        </div>
+    </footer>
+</body>
+</html>
